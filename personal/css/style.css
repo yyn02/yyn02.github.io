@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Scheherazade+New&display=swap');
+/*Roboto: sans-serif Scheherazade New: serif; */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+	weight: 100%;
+}
+body{
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color:rgb(255,240,230);
+	color: #000a16;
+	font-family: Roboto, sans-serif;
+	font-size: 20px
+	Line-height: 
+}
+article{
+	margin: 1.5vh 0;
+	padding: 1vh 5vw;
+}
+section{
+	margin: 1vh 0;
+}
+p{
+	margin: 1.5vh 0;
+}
+nav{
+	position: fixed;
+	top: 1vh;
+	left: 1vh;
+	font-family: 'Cinzel', serif;
+	font-weight: bold;
+	background-color: #EEB4B4;
+}
+nav > a{
+	display: inline-block;
+	padding: 2px 4px;
+	text-align: center;
+	opacity: 0.9;
+	color: white;
+}
+nav > a:hover{
+	color: #8B6969;
+	opacity: 0.8;
+}
+nav > a:not(:first-of-type){
+	border-left: solid 2px rgb(255,240,230);
+}
+h1,h2{
+	font-family: Scheherazade New, serif;
+	text-align: center;
+}
+h1 {
+	font-size: 30px;
+	margin: 1vh 0;
+}
+h2 {
+	font-size: 30px;
+	margin: 1vh 0;
+}
