@@ -16,15 +16,14 @@ body{
 	color: #000a16;
 	font-family: Roboto, sans-serif;
 	font-size: 20px
-	Line-height: 
 }
-article{
+/*article{
 	margin: 1.5vh 0;
 	padding: 1vh 5vw;
 }
 section{
 	margin: 1vh 0;
-}
+}*/
 p::first-letter{
 	font-size: 30px;
 }
@@ -57,18 +56,12 @@ nav > a:hover{
 h1,h2{
 	font-family: Scheherazade New, serif;
 	text-align: center;
-}
-h1 {
-	font-size: 30px;
-	margin: 1vh 0;
-}
-h2 {
 	font-size: 30px;
 	margin: 1vh 0;
 }
 
 #line{
-	position: absolute;
+	/*position: absolute;*/
 	background-color: #EEB4B4;
 	bottom: 0;
 	width: 100%;
