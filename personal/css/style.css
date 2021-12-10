@@ -10,12 +10,12 @@ html{
 	weight: 100%;
 }
 body{
+	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
 	background-color:rgb(255,240,230);
 	color: #000a16;
 	font-family: Roboto, sans-serif;
-	font-size: 20px
 }
 /*article{
 	margin: 1.5vh 0;
@@ -34,7 +34,7 @@ nav{
 	position: absolute;
 	width: 100%;
 	top: 0;
-	height: 50px;
+	height:5%;
 	opacity: 0.9;
 	font-family: Cinzel, serif;
 	font-weight: bold;
@@ -42,12 +42,14 @@ nav{
 }
 nav > a{
 	display: inline-block;
-	padding: 2px 4px;
+	position: relative;
+	top: 50%;
+	padding: 0px 4px;
 	text-align: center;
-	line-height: 50px;
 	opacity: 0.9;
 	color: white;
 	text-decoration: none;
+	transform: translatey(-50%);
 }
 nav > a:hover{
 	color: #8B6969;
@@ -57,16 +59,14 @@ h1,h2{
 	font-family: Scheherazade New, serif;
 	text-align: center;
 	font-size: 30px;
-	margin: 1vh 0;
 }
 
 #line{
-	/*position: absolute;*/
 	background-color: #EEB4B4;
 	bottom: 0;
 	width: 100%;
-	height: 40px;
-	line-height: 20px;
+	height: 5%;
+	line-height: 80%;
 	font-family: Cinzel, serif;
 	font-weight: bold;
 	font-size: 20px;
