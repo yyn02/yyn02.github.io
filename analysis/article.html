@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<title>Candy Brain</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="./js/demo.js"></script>
+		<style>
+			span.joint{
+				color: #a6611a;
+			}
+			span.vocab{
+				padding: 0 4px;
+				border-radius: 2px;
+				background-color: #018571;
+				color: white;
+			}
+			span.vocab > span {
+				text-indent: 0;
+				display: none;
+				position: fixed;
+				top: 50%;
+				left: 10px;
+				text-transform: translateY(-50%);
+				max-width: 50vw;
+				padding: 0.4px;
+				border-radius: 2px;
+				background-color: #dfc27d;
+				color: #000a16;
+			}
+			span.vocab:hover > span{
+				display: block;
+				opacity: 0.9;
+			}
+			article > section{
+				position: relative;
+				top: 50px;
+				opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a href="#"><span>+</span></a><a href="index.html">Home</a><a href="article.html">Essay</a><a href="analysis.html">Structure Analaysis</a>
+		</nav>
+		<article>
+			<h1>Candy Brain</h1>
+			<p>
+				Aug 20, 2015 @The New York Times [<a href="https://well.blogs.nytimes.com/2015/08/20/candy-brain/" target="_blank" style="text-decoration:none;">Original Article]</a><br/>by Gretchen Reynolds
+			</p>
+			<figure style="text-align:center">
+				<image src="image/candy-brain.png" style="width:430px;height:430px;opacity:0.95;border-radius:15px;">
+			</figure>
+			<section id="sec1">
+			<h3>[Sec. #1]</h3>
+			<p>
+				Sticking to a diet requires self-control and a willingness to forgo present pleasures for future benefits. Not surprisingly, almost everyone yields to temptation at least sometimes, opting for the cookie instead of the apple. Wondering why we so often <span class="vocab">override<span><b>"override"</b> - To decide against or refuse to accept a previous decision, an order, a person, etc</span></span> our resolve, scientists at the Laboratory for Social and Neural Systems Research at the University of Zurich recently considered the role of stress, which is linked to a variety of health problems, including weight gain. (There’s something to the rom-com <span class="vocab">cliché<span><b>"cliché"</b> - A saying or remark that is very often made and is therefore not original and not interesting</span></span> of the <span class="vocab">jilted<span><b>"jilted"</b> - Having suffered someone ending a romantic relationship with you suddenly and unkindly</span></span> lover eating ice cream directly from the carton.) But just how stress might drive us to sweets has not been altogether clear. It turns out that even mild stress may immediately alter the workings of our brains in ways that undermine willpower.
+			</p>
+		</section>
+		<section id="sec2">
+			<h3>[Sec. #2]</h3>
+			<p>
+				For their study, published this month in Neuron, researchers recruited 51 young men who said they were trying to maintain a healthy diet and lifestyle. The men were divided into two groups, one of which served as a control, and then all were asked to skim through images of different kinds of food on a computer screen, rating them for taste and healthfulness.</p>
+			<p>
+				Next, the men in the experimental group were told to <span class="vocab">plunge<span><b>"plunge"</b> - To move or fall suddenly and often a long way forward, down, or into something</span></span> a hand into a bowl of icy water for as long as they could, a test known to induce mild physiological and psychological stress. Relative to the control group, the men developed higher levels of <span class="vocab">cortisol<span><b>"cortisol"</b> - A chemical made in the body that is used in medicine to treat parts of the body that are swollen and painful</span></span>, a stress hormone.</p>
+			<p>
+				After that, men from each group sat in a brain-scanning machine and watched pictures of paired foods flash across a screen. Generally, one of the two foods was more healthful than the other. The subjects were asked to click rapidly on which food they would choose to eat, knowing that at the end of the test they would actually be expected to eat one of these picks (chosen at random from all of their choices).
+			</p>
+		</section>
+		<section id="sec3">
+			<h3>[Section #3]</h3>
+			<p>
+				When the two groups were compared, it was found that the men who had recently experienced mild stress were much more likely to choose unhealthful but tasty foods than those in the control group. And the greater the stress — as determined by cortisol levels — the greater the attraction to rich, <span class="vocab">palatable<span><b>"palatable"</b> - Food or drink that has a pleasant taste</span></span> snacks. The stressed-out men also displayed more activity in parts of the brain linked to the enjoyment of tasty foods and fewer neural messages into a part of the brain that affects long-range planning. In effect, the stress of the ice-water bath had <span class="vocab">amplified<span><b>"amplify"</b> - To increase the size or effect of something</span></span> the perceived flavor of unhealthful foods and <span class="vocab">dampened<span><b>"dampen"</b> - To make something slightly wet</span></span> the ability to consider the future, undermining self-control.</p>
+			</section>
+			<section id="sec4">
+			<h3>[Section #4]</h3>
+			<p>
+				From an evolutionary standpoint, these neurological responses make sense, according to the study’s authors. Animals in stressful situations must focus on their immediate conditions, not some <span class="vocab">hazy<span><b>"hazy"</b> - Not clear because of haze (= fog)</span></span> future, and may need to comfort themselves so they can face dangers calmly. In our own world of work deadlines and relationship pressures, we reach for the candy.<span class="joint">&#9658</span>It doesn’t have to be this way. When faced with stress, just "think about an action path that improves your choice," says Todd Hare, lead author of the study. Go for a walk instead of eating. "If you know you will have a hard time resisting," he adds, "don’t store snacks at home."</p>
+		</section>
+		</article>
+		<!--<div id="menu">
+			<a href="#"><img src="image/menu.png" style="width:65px;height:65px;"></a>
+		<span id="hide">
+		<div id="icon1">
+			<image src="image/pancake.png" style="height:24px;width:24px;">
+			<span><a href="index.html" style="text-decoration:none; color:white;line-height:5vh;">Home</a></span>
+		</div>
+		<div id="icon2">
+			<image src="image/toffee.png" style="height:24px; width:24px;">
+			<span><a href="article.html" style="text-decoration:none; color:white;line-height:5vh;">Essay</span></a>
+		</div>
+		<div id="icon3">
+			<image src="image/pizza.png" style="height:24px; width:24px;"></image>
+			<span><a href="analysis.html" style="text-decoration:none; color:white;line-height:5vh;">Structure Analysis</span></a>
+		</div>
+			</span>
+		</div>-->
+	</body>
+</html>
