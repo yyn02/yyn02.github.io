@@ -133,7 +133,7 @@ nav > a{
 #line-a{
 	display: inline-block;
 	position: relative;
-	top: 55%;
+	top: 50%;
 	opacity: 0.9;
 	transform: translatey(-50%);
 }
