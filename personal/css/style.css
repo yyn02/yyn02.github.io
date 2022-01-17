@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Scheherazade+New&display=swap');
 /*Roboto: sans-serif Scheherazade New: serif; */
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
 *{
 	margin: 0;
 	padding: 0;
@@ -7,7 +8,7 @@
 }
 html{
 	height: 100%;
-	weight: 100%;
+	width: 100%;
 }
 body{
 	height: 100%;
@@ -17,13 +18,7 @@ body{
 	color: #000a16;
 	font-family: Roboto, sans-serif;
 }
-/*article{
-	margin: 1.5vh 0;
-	padding: 1vh 5vw;
-}
-section{
-	margin: 1vh 0;
-}*/
+
 p::first-letter{
 	font-size: 30px;
 }
@@ -31,10 +26,11 @@ p{
 	margin: 1.5vh 0;
 }
 nav{
-	position: absolute;
+	position: fixed;
+	z-index: 3;
 	width: 100%;
 	top: 0;
-	height:5%;
+	height:9%;
 	opacity: 0.9;
 	font-family: Cinzel, serif;
 	font-weight: bold;
@@ -44,33 +40,116 @@ nav > a{
 	display: inline-block;
 	position: relative;
 	top: 50%;
-	padding: 0px 4px;
+	padding: 0px 10px;
 	text-align: center;
 	opacity: 0.9;
 	color: white;
 	text-decoration: none;
 	transform: translatey(-50%);
+	transition:  all 0.7s ease-out;
 }
-nav > a:hover{
+
+#a:hover{
 	color: #8B6969;
-	opacity: 0.8;
+	opacity: 0.9;
+	transition: all 0.2s ease-out;
 }
-h1,h2{
-	font-family: Scheherazade New, serif;
+
+#s1{
+	position: fixed;
+	top: 47%;
+	right: 5px;
+	padding: 10px 20px;
+}
+
+#s2{
+	position: fixed;
+	top: 53%;
+	right: 6px;
+	padding: 10px 18px;
+}
+
+#t1{
+	position: fixed;
+	display: inline-block;
+	width: 10vw;
+	height: 5vh;
+	top: 47%;
+	right: 9px;
+	border-radius: 10px;
+	background-color: #EECBAD;
+    text-align: center;
+	font-family: Cinzel, serif;
+	opacity: 0;
+	z-index: 50;
+}
+
+#s1:hover > #t1{
+	width: 8%;
+	opacity: 1;
+	transition: all 1s ease;
+}
+
+#t2{
+	position: fixed;
+	dispaly: inline-block;
+	width: 10vw;
+	height: 5vh;
+	top: 53%;
+	right: 9px;
+	border-radius: 10px;
+	background-color: #EECBAD;
 	text-align: center;
-	font-size: 30px;
+	font-family: Cinzel, serif;
+	opacity: 0;
+	z-index: 50;
+}
+
+#s2:hover > #t2{
+	width: 8%;
+	opacity: 1;
+	transition: all 1s ease;
+}
+
+.container{
+	margin: 0 auto;
+	width: 80%;
 }
 
 #line{
 	background-color: #EEB4B4;
 	bottom: 0;
 	width: 100%;
-	height: 5%;
-	line-height: 80%;
+	height: 13.5%;
+	line-height: 100%;
 	font-family: Cinzel, serif;
 	font-weight: bold;
-	font-size: 20px;
-	text-align: right;
+	font-size: 28px;
+	text-align: center;
 	color: floralwhite;
-	opacity: 0.9;
+	opacity: 0.95;
 }
+
+#line-a{
+	display: inline-block;
+	position: relative;
+	top: 55%;
+	transform: translatey(-50%);
+}
+
+#gmail{
+	color:white; 
+	text-decoration:none; 
+	font-size:18px; 
+	opacity:0.9; 
+	position: relative;
+	left: 43%;
+	top:20%;
+}
+
+.title{
+	padding: 1%;
+	display: block;
+	margin-top: 18vh;
+}
+

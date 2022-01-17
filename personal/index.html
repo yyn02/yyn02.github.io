@@ -4,58 +4,127 @@
 		<title>Homepage</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 		<style>
 			section{
-				height: 95%;
-				padding: 5vw;
+				height: 86.5%;
+				padding: 2.5%;
+				padding-top: 13vh;
 				text-align: center;
 			}
 
 			h1{
 				font-weight: bolder;
-				font-size: 45px;
+				font-size: 60px;
 				color: #8B6969;
+				font-family: 'WindSong', cursive;
+				text-shadow: 2px 4px 5px lightgrey;
 			}
 
 			#p1{
-				width:500px; 
+				width:400px; 
 				height:400px;
-				border-radius:7%; 
-				margin-top: 2%;
+				border-radius:100%; 
 			}
 
 			#f1{
-				position: absolute;
-				bottom: 10%;
-				right: 20%;
+				position: fixed;
+				bottom: 29%;
+				right: 16.5%;
+				filter: drop-shadow(5px 6px 5px rgba(0,0,0,0.25));
+				transition: all 0.7s ease-out;
 			}
+
+			#f1:hover{
+				filter: drop-shadow(8px 8px 7px rgba(0,0,0,0.35));
+				transition: all 0.7s ease-out;
+
+			}
+
+			#f1 > span{
+				opacity: 0;
+				display: inline-block;
+				width: 8vw;
+				height: 7vh;
+				background-color: #EECBAD;
+				color: white;
+				font-family: Cinzel, serif;
+				text-align: center;
+				transition: all 1s ease-out;
+			}
+
+			#f1:hover > span{
+				opacity: 1;
+				transition: all 1s ease-out;
+			}
+
 			#f2{
-				position: absolute;
-				bottom:10%;
-				left: 20%;
+				position: fixed;
+				/*transform: scaleX(-1);*/
+				bottom:29%;
+				left: 25%;
+				filter: drop-shadow(5px 6px 5px rgba(0,0,0,0.25));
+				transition: all 0.7s ease-out;
 			}
-	
+
+			#f2:hover{
+				filter: drop-shadow(8px 8px 7px rgba(0,0,0,0.35));
+				transition: all 0.7s ease-out;
+			}
+
+			#f2 > span{
+				opacity: 0;
+				position: fixed;
+				display: inline-block;
+				width: 8vw;
+				height: 7vh;
+				left: -47% ;
+				background-color: #EECBAD;
+				color: white;
+				font-family: Cinzel, serif;
+				text-align: center;
+				transition: all 1s ease-out;
+			}
+
+			#f2:hover > span{
+				opacity: 1;
+				transition: all 1s ease-out;
+			}
+
 		</style>
 	</head>
 	<body>
 		<nav>
-			<a href="index.html">HOMEPAGE</a><a>/</a><a href="aboutme.html">INTRODUCTION</a><a>/</a><a href="music.html">MUSIC THERAPY</a>
+			<a href="index.html" id="a">HOMEPAGE</a><a>/</a><a href="aboutme.html" id="a">INTRODUCTION</a><a>/</a><a href="musictherapy.html" id="a">MUSIC THERAPY</a>
 		</nav>
 		<section>
+			<image src="image/bdd.png" id="p1"></image>
 			<h1>
-			Welcome to my website!
+			Welcome to my Website!
 			</h1>
-			<image src="image/bd.jpg" id="p1"></image>
 		</section>
 		<figure id="f1">
-		<image src="image/pngf1.png" style="width:200px; height:200px"></image>
+		<image src="image/pngf1.png" style="width:180px; height:180px; opacity:0.7"></image>
+		<span>Feel free <br/>to contact me!</span>
 		</figure>
 		<figure id="f2">
-			<image src="image/pngf2.png" style="width:200ox;height:200px"></image>
+			<image src="image/pngf2.png" style="width:180ox;height:180px;opacity:0.7"></image>
+			<span><a href="https://yyn02.github.io/analysis/" style="text-decoration:none; color:white;">To my <br/>analysis website!</a></span>
 		</figure>
+
+		<div id="s1">
+			<img src="image/iconfb.png" style="height:24px;width:24px;">
+			<span id="t1"><a href="https://www.facebook.com/yen.yun.102" style="text-decoration:none; color:white;line-height:5vh;">Facebook</span></a>
+		</div>
+		<div id="s2">
+			<image src="image/iconig.png" style="height:27px; width:27px;">
+			<span id="t2"><a href="https://www.instagram.com/yyn._.02"style="text-decoration:none; color:white;line-height:5vh;">Instagram</span></a>
+		</div>
+
 		<footer id="line">
-			Cailyn Ting's personal website. 2021 <br/>
-			<a href='https://pngtree.com/so/one' style="color:white; text-decoration:none; font-size:12px; opacity:0.9; line-height:10px">png from pngtree.com/</a>
+			<a id="line-a">Cailyn Ting's personal website. Fall 2021<a> <br/>
+			<a id="gmail">pp2188102102@gmail.com</a><br/>
+			<a href='https://pngtree.com' style="color:white; text-decoration:none; font-size:12px; opacity:0.9; position: relative;top:5%;left:45%">png from pngtree.com/</a>
 		</footer>
 	</body>
 </html>
