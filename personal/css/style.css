@@ -134,6 +134,7 @@ nav > a{
 	display: inline-block;
 	position: relative;
 	top: 55%;
+	opacity: 0.9;
 	transform: translatey(-50%);
 }
 
@@ -145,6 +146,7 @@ nav > a{
 	position: relative;
 	left: 43%;
 	top:20%;
+	opacity: 0.9;
 }
 
 .title{
